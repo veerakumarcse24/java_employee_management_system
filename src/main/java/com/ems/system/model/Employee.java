@@ -28,7 +28,61 @@ public class Employee {
 	private long phone;
 	
 	@Column(name="address", nullable = false)
-	private String addres;
+	private String address;
+	
+	public Employee() {
+		
+	}
+
+	public Employee(long id, String firstName, String lastName, long phone, String address) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phone = phone;
+		this.address = address;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public long getPhone() {
+		return phone;
+	}
+
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
 	
 
 }
